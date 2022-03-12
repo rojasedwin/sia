@@ -1,0 +1,3 @@
+npm ini -y -->crear proyecto
+npm i express express-session mysql ejs dotenv bcryptjs
+express-handlebars    express-mysql-session morgan  passport passport-local timeago.js connect-flash express-validator
