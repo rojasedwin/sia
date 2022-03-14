@@ -1,6 +1,6 @@
 const express = require('express');
-const dotenv =require('dotenv');
-const cookieParser = require('cookie-parser');
+//const dotenv =require('dotenv');
+//const cookieParser = require('cookie-parser');
 
 
 const app=express();
@@ -21,12 +21,12 @@ app.set('view engine', '.ejs');
 app.use(express.static('public'));
 
 //procesar form
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false }));
 //enviar y recibir json
 app.use(express.json());
 
 //Variables de entorno
-dotenv.config({path: './env/.env'})
+//dotenv.config({path: './env/.env'})
 
 //Cookies
 //app.use(cookieParser)

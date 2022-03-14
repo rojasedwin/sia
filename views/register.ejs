@@ -43,7 +43,7 @@
             <div class="card border-primary">
                     <div class="card-header bg-primary text-white text-center">Registro de Usuarios</div>
                     <div class="card-body text-primary">
-                        <form action="/register" method="post">
+                        <form action="/save" method="POST">
                             <div class="mb-3">
                                 <label for="user_name" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Nombre">
@@ -64,15 +64,13 @@
                                 <input type="text" class="form-control" id="user_pass" name="user_pass" placeholder="Password">
                             </div>
                               
-                             
-
+                            <button class="btn btn-primary" type="submit">Guardar</button>
+                              <a href="/" class="btn btn-secondary">Cancelar</a>  
                         </form>
 
                     </div>
 
-                    <div class="card-footer bg-transparent border-primary">
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                      </div>
+                   
 
             </div>
             </div>
