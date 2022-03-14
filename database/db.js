@@ -15,7 +15,6 @@ const conexion  = mysql.createConnection({
 })
 
 
-
 conexion.connect( (error) =>{
     if(error){
         console.log('El error de conexion es: '+error);
