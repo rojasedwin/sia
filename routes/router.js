@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
        }else{
        res.render('index',{results:results});
         //res.send(results);
-        //console.log(results);
+        console.log(results);
        }
    });
     
