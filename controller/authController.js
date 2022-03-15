@@ -63,7 +63,7 @@ exports.login = async (req, res)=>{
                     const id = results[0].id
                     console.log(id)
                    const token = jwt.sign({id: id}, 'secret', {
-                        expiresIn: '7d'
+                        expiresIn: ''
                    })
                    console.log(token)
                     //generamos el token SIN fecha de expiracion
