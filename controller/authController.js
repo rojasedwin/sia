@@ -60,7 +60,7 @@ exports.login = async (req, res)=>{
                     })
                 }else{
                     //creamos una var de session y le asignamos true si INICIO SESSION       
-				//req.session.rol = true;                
+				//req.session.loggedInAdmin = true;                
 				//req.session.user = results[0].user_name;
 				res.render('login', {
 					alert: true,
