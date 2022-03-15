@@ -34,3 +34,10 @@ app.use(express.json());
 //RUTAS = Urls
 app.use('/', require('./routes/router'))
 
+
+const session = require('express-session');
+app.use(session({
+	secret: 'secret',
+	resave: true,
+	saveUninitialized: true
+}));

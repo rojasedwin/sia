@@ -59,31 +59,18 @@ exports.login = async (req, res)=>{
                         ruta: 'login'    
                     })
                 }else{
-                    //inicio de sesión OK
-                    const id = results[0].id
-                    console.log(id)
-                   const token = jwt.sign({id: id}, 'secret', {
-                        expiresIn: ''
-                   })
-                   console.log(token)
-                    //generamos el token SIN fecha de expiracion
-                 console.log("TOKEN: "+token+" para el USUARIO : "+user)
-                   console.log("TOKEN: "+id+" para el USUARIO : "+user)
-
-                   const cookiesOptions = {
-                        expires: new Date(Date.now()+process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
-                        httpOnly: true
-                   }
-                   res.cookie('jwt', token, cookiesOptions)
-                   res.render('login', {
-                        alert: true,
-                        alertTitle: "Conexión exitosa",
-                        alertMessage: "¡LOGIN CORRECTO!",
-                        alertIcon:'success',
-                        showConfirmButton: false,
-                        timer: 800,
-                        ruta: 'dashboard'
-                   })
+                    //creamos una var de session y le asignamos true si INICIO SESSION       
+				//req.session.rol = true;                
+				//req.session.user = results[0].user_name;
+				res.render('login', {
+					alert: true,
+					alertTitle: "Conexión exitosa",
+					alertMessage: "¡LOGIN CORRECTO!",
+					alertIcon:'success',
+					showConfirmButton: false,
+					timer: 1500,
+					ruta: ''
+				});        			
                 }
             })
         }
