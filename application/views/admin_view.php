@@ -1,7 +1,17 @@
 <?php
-	$this->load->view('themes/'.$this->config->item('app_theme_admin').'/header');
 
-	//Header
+	$this->load->view('back/template/meta');
+	echo '<div class="wrapper">';
+	$this->load->view('back/template/header');
+	$this->load->view('back/template/sidebar');
+	$this->load->view($view);
+	$this->load->view('back/template/footer');
+	echo "</div>";
+
+	
+
+
+	/*//Header
 	if(isset($custom_header)){
 		$this->load->view('themes/'.$this->config->item('app_theme_admin').'/'.$custom_header);
 	}
@@ -19,5 +29,7 @@
 		$this->load->view('themes/'.$this->config->item('app_theme_admin').'/default_footer');
 	}
 
-	$this->load->view('themes/'.$this->config->item('app_theme_admin').'/footer');
+	$this->load->view('themes/'.$this->config->item('app_theme_admin').'/footer');*/
+	
+	//echo "aqui";exit;
 ?>

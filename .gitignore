@@ -1,43 +1,21 @@
 .DS_Store
 
-
-*.zip
-!datos/*.zip
-assets/cache/*
-!attachments/
-
-attachments/*
-!attachments/web
-
-application/ci_sessions/*
-application/config/config.php
-application/config/custom.php
-application/config/constants.php
-application/config/email.php
-application/config/database.php
-application/config/third_party_apis.php
-composer.json
-contributing.md
-.profile
-.editorconfig
-*.pem
-*.crt
-*.key
 application/cache/*
 !application/cache/index.html
-!application/cache/.htaccess
 
 application/logs/*
 !application/logs/index.html
-!application/logs/.htaccess
+
+!application/*/.htaccess
 
 composer.lock
+tests/mocks/database/ci_test.sqlite
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
-
+/vendor/
 
 # IDE Files
 #-------------------------
@@ -50,3 +28,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+/tests/tests/
+/tests/results/

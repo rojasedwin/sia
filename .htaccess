@@ -1,12 +1,4 @@
-Header set Access-Control-Allow-Origin "*"
-Header set Cache-Control "max-age=31536000, public"
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^pedidoslab.es$  [NC]
-RewriteRule (.*) https://www.pedidoslab.es/$1 [R=301,L]
-
-RewriteCond $1 !^(index.php|data|assets|attachments|fonts|robots.txt|install|phpMyAdmin|.well-known)
-RewriteRule ^(.*)$ /index.php/$1 [L]
-php_value upload_max_filesize 150M
-php_value post_max_size 152M
-php_value max_file_uploads 100
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

@@ -1,8 +1,0 @@
-Sitemap: https://www.crestanevada.es/sitemap.xml
-User-agent: *
-Disallow: /adminsite/
-Disallow: /auth/
-Disallow: /firma
-Disallow: /firmaReserva
-Disallow: /firmaEntrega
-Disallow: /authTaller
