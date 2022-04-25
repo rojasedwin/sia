@@ -1,0 +1,26 @@
+{
+  "name": "backgrid-pagetor",
+  "repo": "wyuenho/backgrid-pagetor",
+  "description": "Backgrid.js extension for pagetion.",
+  "version": "0.3.5",
+  "keywords": [
+    "backbone",
+    "backgrid",
+    "pagetor",
+    "pagetion"
+  ],
+  "main": "backgrid-pagetor.js",
+  "scripts": [
+    "backgrid-pagetor.js"
+  ],
+  "styles": [
+    "backgrid-pagetor.css"
+  ],
+  "dependencies": {
+    "jashkenas/underscore": "^1.6.0",
+    "jashkenas/backbone": "^1.1.2",
+    "backbone-pagetor/backbone.pagetor": "^2.0.1",
+    "wyuenho/backgrid": "0.3.5"
+  },
+  "license": "MIT"
+}

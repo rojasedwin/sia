@@ -1,0 +1,6 @@
+- Al iniciar no lleva a login por defecto.
+- No pedir contraseña para los laboratorios.
+- Usar nombre comercial en pedidos.
+- Borrar todos los excel, borrar almacen externo.
+- Condiciones no guardar si es vacio o guardar a -1 y luego no mostrar en panel.
+- Arreglar vista.
