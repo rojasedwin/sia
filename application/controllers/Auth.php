@@ -17,7 +17,11 @@ class Auth extends MY_Controller {
   }
 
     public function login(){
+		
+		if(!isset($this->session->logged_inAdmin))
 		    $this->load->view('login');
+		else
+			redirect('dashboard');
     }
 
     public function authenticate(){
